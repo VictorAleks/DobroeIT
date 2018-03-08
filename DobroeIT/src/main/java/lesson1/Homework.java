@@ -29,6 +29,17 @@ public class Homework {
     double d = 3.14;
     int i = (int) d;
     System.out.println("Explicit casting: " + i);
+
+    /***7th Task***/
+
+    byte byteVar;
+    short shortVar;
+    int intVar;
+    long longVar;
+    float floatVar;
+    double DoubleVar;
+    boolean boolVar;
+    char charVar;
   }
 
 }
