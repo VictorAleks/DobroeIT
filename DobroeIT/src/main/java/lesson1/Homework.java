@@ -2,6 +2,15 @@ package lesson1;
 
 public class Homework {
 
+  static byte byteVar;
+  static short shortVar;
+  static int intVar;
+  static long longVar;
+  static float floatVar;
+  static double doubleVar;
+  static boolean boolVar;
+  static char charVar;
+
   public static void main(String[] args) {
 
     /***3rd Task***/
@@ -31,15 +40,14 @@ public class Homework {
     System.out.println("Explicit casting: " + i);
 
     /***7th Task***/
-
-    byte byteVar;
-    short shortVar;
-    int intVar;
-    long longVar;
-    float floatVar;
-    double DoubleVar;
-    boolean boolVar;
-    char charVar;
+    System.out.println("Default values: ");
+    System.out.println("byte - " + byteVar);
+    System.out.println("short - " + shortVar);
+    System.out.println("int - " + intVar);
+    System.out.println("long - " + longVar);
+    System.out.println("float - " + floatVar);
+    System.out.println("double - " + doubleVar);
+    System.out.println("bool - " + boolVar);
+    System.out.println("char - " + charVar);
   }
-
 }
