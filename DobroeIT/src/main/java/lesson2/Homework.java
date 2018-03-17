@@ -3,6 +3,16 @@ package dobroe;
 public class Lesson2 {
 
     /***Task1***/
+    static void SumPos (int a, int b, int c){
+        int result = 0;
+        if (a > 0) result += a;
+        if (b > 0) result += b;
+        if (c > 0) result +=c;
+        if (result == 0) System.out.println("No positive numbers");
+        else
+        System.out.println("Sum of positive numbers is: " + result);
+    }
+
     static void SumPositive (int a, int b, int c) {
         if (a > 0) {
             if (b > 0) {
@@ -51,14 +61,17 @@ public class Lesson2 {
         return factorial;
     }
 
-    static int FactorRecursive (int a){
-        return a * FactorRecursive( a - 1);
+    static int Factor (int a){
+        int result;
+        if (a == 1) return 1;
+        else result = a * Factor( a - 1);
+        return result;
     }
 
 
     public static void main(String[] args) {
 
-        SumPositive(-1, -4, 8);
+        SumPos(-1, 4, 8);
 
         System.out.println(SumModulo(new int[]{2, 3, 4, 5, 6}));
 
@@ -66,7 +79,7 @@ public class Lesson2 {
 
         System.out.println(FactorIterative(4));
 
-        System.out.println(FactorIterative(5));
+        System.out.println(Factor(5));
     }
 }
 
